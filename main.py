@@ -7,21 +7,6 @@ import os
 import time
 from gtts import gTTS
 
-class talker:
-
-    def __init__(self):
-        self.__recognizer =  sr.Recognizer()
-
-
-    def __listen(self):
-        with sr.Microphone() as source:
-            print("\n")
-            audio_text = self.__recognizer.listen(source)
-            print("Time over, thanks")
-            # recoginize_() method will throw a request error if the API is unreachable, hence using exception handling
-            newString = ""
-
-
 
 
 #Program starts here
